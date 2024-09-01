@@ -1,0 +1,402 @@
+/* إعدادات عامة */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* خلفية متدرجة الألوان */
+    color: #333;
+}
+
+/* إعدادات شريط التنقل */
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* استخدام inline-block بدلًا من inline */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* إعدادات الهيدر */
+header {
+    padding: 100px 20px 50px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.name {
+    font-size: 36px; /* تقليل الحجم على الهواتف */
+    margin: 0;
+}
+
+.typing-text {
+    font-size: 20px;
+    color: green;
+    border-right: 2px solid green;
+    white-space: pre-wrap; /* الحفاظ على الأسطر الجديدة */
+    overflow-wrap: break-word; /* التعامل مع النصوص الطويلة */
+}
+
+/* تنسيق قسم الرأس */
+.header-content {
+    display: flex;
+    flex-direction: column; /* تحويل الاتجاه إلى عمودي على الهواتف */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.header-image img {
+    width: 200px; /* تقليل الحجم على الهواتف */
+    height: 200px; /* تعديل الحجم حسب الحاجة */
+    border-radius: 50%; /* جعل الصورة دائرية */
+    object-fit: cover; /* تغطية الصورة بالكامل داخل الإطار */
+    margin-top: 20px;
+}
+
+/* إعدادات قسم النبذة الشخصية */
+#about {
+    padding: 20px;
+    background: #fff;
+    color: #333;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#about h2 {
+    font-size: 24px; /* تقليل الحجم على الهواتف */
+    margin-bottom: 10px;
+}
+
+/* إعدادات قسم الأعمال */
+#portfolio {
+    padding: 20px;
+    background: #f9f9f9;
+    color: #333;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#portfolio h2 {
+    font-size: 24px; /* تقليل الحجم على الهواتف */
+    margin-bottom: 10px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr; /* عمود واحد على الهواتف */
+    gap: 20px; /* مسافة بين المشاريع */
+}
+
+.project {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-thumbnail {
+    width: 100px; /* تقليل الحجم على الهواتف */
+    height: 100px; /* تعديل الحجم حسب الحاجة */
+}
+
+/* إعدادات قسم المعرض */
+#gallery {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    color: #333;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: 1fr; /* عمود واحد على الهواتف */
+    gap: 10px; /* المسافة بين الصور */
+}
+
+.gallery-item img {
+    width: 100%; /* عرض الصورة بكامل عرض الشاشة */
+    height: auto; /* المحافظة على نسبة الأبعاد */
+}
+
+/* إعدادات قسم التواصل */
+#contact {
+    padding: 5rem 0;
+    background: #f4f4f4;
+}
+
+#contact .contact-content {
+    display: flex;
+    flex-direction: column; /* تحويل الاتجاه إلى عمودي على الهواتف */
+    align-items: center;
+}
+
+#contact .contact-info, form {
+    width: 100%;
+    margin-bottom: 20px; /* إضافة مسافة بين الحقول */
+}
+
+/* إعدادات الفوتر */
+footer {
+    padding: 20px;
+    background: #8B8B8E;
+    color: #333;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* تنسيق المهارات */
+.skills {
+    padding: 20px;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* عمودين على الهواتف */
+    gap: 10px;
+    justify-items: center;
+}
+
+.skill-item {
+    width: 80px; /* تصغير حجم عنصر المهارة على الهواتف */
+}
+
+/* إعدادات تحسين الاستجابة */
+@media screen and (min-width: 768px) {
+    /* تفعيل التصميم الأصلي على الشاشات الأكبر */
+    .header-content {
+        flex-direction: row;
+    }
+
+    .header-text {
+        text-align: left;
+    }
+
+    .header-image img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.skills {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #28A745;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* ثلاث أعمدة */
+    gap: 20px;
+    justify-items: center;
+}
+
+.skill-item {
+    background-color: #B9AEAE;
+    padding: 9px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100px;
+}
+
+.skill-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.skill-item p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.skills {
+    background-color: #352E2E;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    color: #333;
+}
+
+.m {
+    color: red;
+    font-size: 20px;
+}
+
+.mm {
+    color: red;
+    font-size: 20px;
+}
+
+/* استعلام الوسائط لعرض عمودين على الهواتف */
+@media screen and (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* عمودين على الهواتف */
+    }
+}
+
+.project a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project a:hover {
+    color: #007bff;
+}
+#p1 {
+  color: #127AB1;
+}
+
+.projects-container a:hover {
+   color: red;
+ }
+ 
+ #contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact .contact-info {
+  width: 30%;
+  margin: 20px;
+}
+
+#contact .contact-info div {
+  margin: 30px 0;
+  line-height: 1.7;
+}
+
+#contact .contact-info h3 {
+  font-size: 28px;
+  color: #383848;
+  margin-bottom: 10px;
+}
+
+#contact .contact-info p {
+  color: #9a9a9a;
+  margin-right: 5px;
+}
+
+#contact .contact-info a i {
+  color: #fff;
+  background-color: #383848;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+#contact .contact-info a i:hover {
+  background: yellow;
+  color: #383848;
+}
+
+/* Form Styling */
+form {
+  width: 60%;
+  margin: 50px;
+}
+
+input,
+textarea {
+  display: block;
+  width: 70%;
+  padding: 25px 15px;
+  margin: 20px;
+  border: none;
+  background-color: #e3e2dd;
+}
+
+#contact .btn {
+  background-color: #2FCA2F;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#contact .btn:hover {
+  background-color: #383848;
+  color: #fff;
+}
+
+/* Social Media Links */
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: yellow;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  #contact .contact-content {
+    flex-direction: column;
+  }
+
+  #contact .contact-info,
+  form {
+    width: 100%;
+  }
+}
+#fotter{
+  font-size:20px;
+  text-align: center;
+  background-size: 100%;
+}
