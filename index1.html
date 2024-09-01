@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- استدعاء ملف CSS -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- استدعاء الأشكال -->
+</head>
+
+<body>
+    <!-- شريط التنقل في الأعلى -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">My Work</a></li>
+            <li><a href="#gallery">gallery</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- القسم العلوي: الاسم والعنوان -->
+    <header class="header-content">
+      <div class="header-text">
+        <h1 class="name">Mohamed</h1>
+        <p id="typing-text" class="typing-text"></p>
+      </div>
+      <div class="header-image">
+        <img src="imgs/me.jpg" alt="my photo">
+      </div>
+    </header>
+
+
+    <!-- قسم النبذة الشخصية -->
+    <section id="about">
+        <h2> <i class="fas fa-id-card"></i> About Me</h2>
+        <p>My name is <span class="m">Mohamed</span>, an 18-year-old <span class="mm">web developer</span> with a strong passion for technology and programming. I have experience in designing and developing websites using the latest technologies, and this is my website</p>
+    </section>
+
+    <!-- قسم الأعمال -->
+    <section id="portfolio">
+  <h2><i class="fas fa-file-alt"></i> My Work</h2>
+
+  <div class="projects-container">
+    <div class="project">
+      <h3 id="p1"><a href="https://qunuuq.github.io/Alminshawi/">Alminshawi Quran Project</a></h3>
+      <a href="https://qunuuq.github.io/Alminshawi/" target="_blank">
+        <img src="imgs/quran.jpeg" alt="Alminshawi Project Thumbnail" class="project-thumbnail">
+      </a>
+      <p>مشروع موقع اذاعه القرآن للشيخ محمد صديق المنشاوي مجود ،  يمكنك سماع القرآن علي مدار ال 24 ساعه 🕑</p>
+    </div>
+
+    <div class="project">
+      <h3>Another Project</h3>
+      <a href="https://example.com" target="_blank">
+        <img src="imgs/another_project.jpg" alt="Another Project Thumbnail" class="project-thumbnail">
+      </a>
+      <p>This project is another example of my work, demonstrating my skills in web development and design. Technologies used include HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <!-- يمكنك إضافة المزيد من المشاريع هنا -->
+  </div>
+</section>
+
+    <!-- قسم معرض الصور -->
+    <section id="gallery">
+        <h2><i class="fas fa-images"></i> My Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <a href="projects/1.html">
+                    <img src="imgs/qp.jpg" alt="Project 1">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المهارات -->
+    <section id="skills" class="skills">
+        <h2><i class="fas fa-tools"></i> Skills & Abilities</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <img src="icons/html.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="skill-item">
+                <img src="icons/css-3.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="skill-item">
+                <img src="icons/python.png" alt="Python">
+                <p>Python</p>
+            </div>
+            <!-- أضف المزيد من المهارات حسب الحاجة -->
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Address</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Kafr elzatat-kafrelmahrouk-garbia</p>
+            <p><i class="fa-solid fa-phone"></i> phone: 01206636614</p>
+            <p><i class="fa-solid fa-envelope"></i> drhamo123r@gmail.com </p>
+          </div>
+          <div class="contact-info">
+            <h3>About Me</h3>
+            <p><i class="fas fa-user"></i> My Name Is Mohamed Reda </p>
+            <p><i class="fas fa-calendar"></i> I was born on 14/7/2006</p>
+            <p><i class="fas fa-briefcase"></i> I am a web developer </p>
+          </div>
+          <div class="contact-info">
+            <h3>Follow Me</h3>
+            <a href="https://www.facebook.com/profile.php?id=100073746641095&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/mo0b10"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <form>
+            <input type="text" name="Name" id="Name" placeholder="Your Name" required />
+            <input type="email" name="email" id="email" placeholder="Your Email" required />
+            <input type="text" name="Subject" id="Subject" placeholder="Subject" required />
+            <textarea name="Message" id="message" cols="30" rows="5" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <script src="js/script.js"></script>
+
+    <!-- القسم السفلي (الفوتر) -->
+    <footer id="footer">
+        <p style="text-align: center; margin-top: 20px;">© 2024 | All rights reserved | <a href="https://wa.me//+201206636614"><span class="mq">Mohamed Reda</span></a></p>
+    </footer>
+
+</body>
+
+</html>
